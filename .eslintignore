@@ -1,0 +1,9 @@
+/dist
+/src-cordova
+/node_modules
+/src-ssr
+.eslintrc.js
+.quasar
+.storybook
+.vscode
+/storybook-static

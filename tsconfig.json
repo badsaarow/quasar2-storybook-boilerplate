@@ -1,0 +1,16 @@
+{
+  "extends": "@quasar/app/tsconfig-preset",
+  "include": ["src/**/*.ts", "src/**/*.vue", "src/**/*.js"],
+  "ignorePatterns": [".eslintrc.js"],
+  "compilerOptions": {
+    "baseUrl": "./types",
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "useDefineForClassFields": true,
+    "types": [
+      "jest",
+      "quasar"
+    ]
+  }
+}
