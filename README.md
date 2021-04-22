@@ -7,7 +7,7 @@ Quasar2 Storybook Boilerplate
 - node 14, npm, android studio, xcode
 
 ```bash
-yarn add -g cordova @quasar/cli @quasar/icongenie
+npm install -g cordova @quasar/cli @quasar/icongenie
 yarn
 cd src-cordova
 cordova requirements
@@ -54,6 +54,8 @@ yarn run audit:node_modules
 yarn run audit:licenses
 yarn run audit:lighthouse
 ```
+
+- `yarn run audit:snyk` needs running `./node_modules/.bin/snyk auth` first
 
 ### Build the app for production
 
