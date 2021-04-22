@@ -30,7 +30,7 @@ module.exports = {
         ]
       }
     },
-    
+
     tsconfigRootDir: __dirname,
     ecmaVersion: 2018, // Allows for the parsing of modern ECMAScript features
     sourceType: 'module' // Allows for the use of imports
@@ -105,9 +105,10 @@ module.exports = {
   rules: {
     'prefer-promise-reject-errors': 'off',
     'brace-style': [2, '1tbs', { 'allowSingleLine': true }],
+    'prettier/prettier': ['error',{ endOfLine: 'auto',}],
 
     'vue/max-attributes-per-line': 0,
-    'vue/valid-v-for': 0,    
+    'vue/valid-v-for': 0,
 
     // TypeScript
     quotes: ['warn', 'single', { avoidEscape: true }],
