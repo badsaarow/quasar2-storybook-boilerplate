@@ -7,7 +7,7 @@ const fs = require('fs')
 const loaderUtils = require('loader-utils')
 const path = require('path')
 
-module.exports = function(source) {
+module.exports = function (source) {
   const options = loaderUtils.getOptions(this)
 
   const filename = path.parse(this.resourcePath).name

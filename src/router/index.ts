@@ -9,7 +9,7 @@ import {
 import { StateInterface } from '../store'
 import routes from './routes'
 
-export default route<StateInterface>(function(/* { store, ssrContext } */) {
+export default route<StateInterface>(function (/* { store, ssrContext } */) {
   const createHistory = process.env.SERVER
     ? createMemoryHistory
     : process.env.VUE_ROUTER_MODE === 'history'

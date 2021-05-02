@@ -11,9 +11,7 @@
           @click="leftDrawerOpen = !leftDrawerOpen"
         />
 
-        <q-toolbar-title>
-          Quasar2 Storybook Boilerplate
-        </q-toolbar-title>
+        <q-toolbar-title> Quasar2 Storybook Boilerplate </q-toolbar-title>
 
         <div>Quasar2</div>
       </q-toolbar>
@@ -21,9 +19,7 @@
 
     <q-drawer v-model="leftDrawerOpen" show-if-above bordered content-class="bg-grey-1">
       <q-list>
-        <q-item-label header class="text-grey-8">
-          Full pages
-        </q-item-label>
+        <q-item-label header class="text-grey-8"> Full pages </q-item-label>
         <EssentialLink v-for="link in essentialLinks" :key="link.title" v-bind="link" />
       </q-list>
     </q-drawer>
