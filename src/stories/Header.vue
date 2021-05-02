@@ -35,11 +35,12 @@
   </header>
 </template>
 
-<script>
+<script lang="ts">
+import { defineComponent } from 'vue'
 import './header.css'
 import MyButton from './Button.vue'
 
-export default {
+export default defineComponent({
   name: 'MyHeader',
 
   components: { MyButton },
@@ -52,5 +53,19 @@ export default {
   },
 
   emits: ['login', 'logout', 'create-account'],
-}
+
+  setup(_, { emit }) {
+    return {
+      onLogin() {
+        emit('login')
+      },
+      onLogout() {
+        emit('logout')
+      },
+      onCreateAccount() {
+        emit('create-account')
+      },
+    }
+  },
+})
 </script>
