@@ -17328,7 +17328,7 @@ webpack-virtual-modules@^0.2.2:
   dependencies:
     debug "^3.0.0"
 
-webpack@4:
+webpack@4, webpack@^4:
   version "4.46.0"
   resolved "https://registry.yarnpkg.com/webpack/-/webpack-4.46.0.tgz#bf9b4404ea20a073605e0a011d188d77cb6ad542"
   integrity sha512-6jJuJjg8znb/xRItk7bkT0+Q7AHCYjjFnvKIWQPkNIOyRqoCGvkOs0ipeQzrqz4l5FtN5ZI/ukEHroeX/o1/5Q==
@@ -17386,7 +17386,7 @@ webpack@5.35.0:
     watchpack "^2.0.0"
     webpack-sources "^2.1.1"
 
-webpack@^5, webpack@^5.1.0, webpack@^5.36.2:
+webpack@^5, webpack@^5.1.0:
   version "5.36.2"
   resolved "https://registry.yarnpkg.com/webpack/-/webpack-5.36.2.tgz#6ef1fb2453ad52faa61e78d486d353d07cca8a0f"
   integrity sha512-XJumVnnGoH2dV+Pk1VwgY4YT6AiMKpVoudUFCNOXMIVrEKPUgEwdIfWPjIuGLESAiS8EdIHX5+TiJz/5JccmRg==
