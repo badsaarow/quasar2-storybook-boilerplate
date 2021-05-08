@@ -21,7 +21,7 @@
     "test:unit:watch": "jest --watch",
     "test:unit:watchAll": "jest --watchAll",
     "serve:test:coverage": "quasar serve test/jest/coverage/lcov-report/ --port 8788",
-    "test:e2e": "cypress open",
+    "test:e2e": "quasar dev & cypress open",
     "test:e2e:ci": "cypress run",
     "serve:test:lighthouse": "quasar serve test/lighthouse/reports/ --port 8789",
     "audit:snyk": "snyk test --json > ./test/audits/snyk.json",

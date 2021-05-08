@@ -7,6 +7,7 @@ Quasar2 Storybook Boilerplate
 - node 14, npm, android studio, xcode
 
 ```bash
+npm config set script-shell pwsh --userconfig ~/.npmrc
 npm install -g cordova @quasar/cli @quasar/icongenie
 yarn
 cd src-cordova
@@ -40,7 +41,7 @@ yarn run lint
 yarn run test:unit:ci
 ```
 
-### E2E Test - Not Yet Fixed
+### E2E Test
 
 ```bash
 yarn run test:e2e:ci
