@@ -8,7 +8,7 @@
   "scripts": {
     "lint": "eslint --ext .js,.ts,.vue ./",
     "dev:storybook": "start-storybook -p 6007",
-    "dev:browser": "quasar dev -m cordova -T browser",
+    "dev:browser": "quasar dev",
     "dev:android": "quasar dev -m cordova -T android",
     "dev:ios": "quasar dev -m cordova -T ios",
     "build:storybook": "build-storybook",
@@ -84,7 +84,7 @@
     "url-loader": "^4.1.1",
     "vue-jest": "^5.0.0-alpha.8",
     "vue-loader": "^16.2.0",
-    "webpack": "^4",
+    "webpack": "^5.36.2",
     "webpack-cli": "^4.6.0",
     "webpack-dev-server": "^3.11.2"
   },
