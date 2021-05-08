@@ -13,7 +13,14 @@ const { configure } = require('quasar/wrappers')
 module.exports = configure(function (/*ctx*/) {
   return {
     // https://v2.quasar.dev/quasar-cli/supporting-ts
-    supportTS: true,
+    supportTS: {
+      tsCheckerConfig: {
+        eslint: {
+          enabled: true,
+          files: './src/**/*.{ts,tsx,js,jsx,vue}',
+        },
+      },
+    },
 
     // https://v2.quasar.dev/quasar-cli/prefetch-feature
     // preFetch: true,
@@ -36,7 +43,7 @@ module.exports = configure(function (/*ctx*/) {
       jest: { version: 'latest' },
     },
 
-    // Full list of options: https://v1.quasar.dev/quasar-cli/quasar-conf-js#Property%3A-build
+    // Full list of options: https://v2.quasar.dev/quasar-cli/quasar-conf-js#Property%3A-build
     build: {
       vueRouterMode: 'hash', // available values: 'hash', 'history'
       // vueLoaderOptions: 'prop',
@@ -49,7 +56,7 @@ module.exports = configure(function (/*ctx*/) {
       },
     },
 
-    // Full list of options: https://v1.quasar.dev/quasar-cli/quasar-conf-js#Property%3A-devServer
+    // Full list of options: https://v2.quasar.dev/quasar-cli/quasar-conf-js#Property%3A-devServer
     devServer: {
       https: false,
       port: 8080,
@@ -68,12 +75,12 @@ module.exports = configure(function (/*ctx*/) {
     // https://v2.quasar.dev/options/animations
     animations: ['fadeInUp', 'fadeOutDown', 'fadeInRight', 'fadeOutRight'],
 
-    // https://v1.quasar.dev/quasar-cli/developing-ssr/configuring-ssr
+    // https://v2.quasar.dev/quasar-cli/developing-ssr/configuring-ssr
     ssr: {
       pwa: false,
     },
 
-    // https://v1.quasar.dev/quasar-cli/developing-pwa/configuring-pwa
+    // https://v2.quasar.dev/quasar-cli/developing-pwa/configuring-pwa
     pwa: {
       workboxPluginMode: 'GenerateSW', // 'GenerateSW' or 'InjectManifest'
       workboxOptions: {}, // only for GenerateSW

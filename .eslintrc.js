@@ -13,7 +13,6 @@ module.exports = {
     // Needed to make the parser take into account 'vue' files
     extraFileExtensions: ['.vue'],
     parser: require.resolve('@typescript-eslint/parser'),
-    // project: './tsconfig.eslint.json',
     project: {
       "extends": "@quasar/app/tsconfig-preset",
       "include": ["src/**/*.ts", "src/**/*.vue", "test/**/*.ts", "src/**/*.js"],
