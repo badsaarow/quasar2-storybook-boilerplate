@@ -12,7 +12,7 @@ npm config set script-shell pwsh --userconfig ~/.npmrc
 ```
 
 ```bash
-sudo npm install -g cordova @quasar/cli @quasar/icongenie
+sudo npm install -g yarn cordova @quasar/cli @quasar/icongenie
 yarn
 cd src-cordova
 cordova requirements
