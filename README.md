@@ -5,10 +5,14 @@ Quasar2 Storybook Boilerplate
 ## Prerequisition
 
 - node 14, npm, android studio, xcode
+- For windows, set script-shell to pwsh
+
+```pwsh
+npm config set script-shell pwsh --userconfig ~/.npmrc
+```
 
 ```bash
-npm config set script-shell pwsh --userconfig ~/.npmrc
-npm install -g cordova @quasar/cli @quasar/icongenie
+sudo npm install -g cordova @quasar/cli @quasar/icongenie
 yarn
 cd src-cordova
 cordova requirements
