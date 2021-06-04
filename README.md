@@ -18,6 +18,14 @@ cd src-cordova
 cordova requirements
 ```
 
+### auth snyk
+
+- Checking licence requires snyk login
+```bash
+node_modules/.bin/snyk auth
+```
+
+
 ### Start the app in development mode (hot-code reloading, error reporting, etc.)
 
 ```bash
@@ -51,7 +59,7 @@ yarn run test:unit:ci
 yarn run test:e2e:ci
 ```
 
-### Audit - Not Yet Fixed
+### Audit
 
 ```bash
 yarn run audit:snyk
@@ -86,3 +94,12 @@ jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore <your-release-k
 ### Troubleshooting
 
 - TLS error while yarn  `set NODE_TLS_REJECT_UNAUTHORIZED=0`, `$env:NODE_TLS_REJECT_UNAUTHORIZED=0`
+
+- `yarn run audit:snyk` failed with exit code 2
+  - check with debug log
+  ```bash
+  yarn run audit:snyk --debug
+  ...
+  "error-message": "`snyk` requires an authenticated account. Please run `snyk auth` and try again."
+  ```
+  - Do `snyk auth` first.
