@@ -40,6 +40,12 @@ const linksData = [
     icon: 'school',
     link: '/',
   },
+  {
+    title: 'Restful',
+    caption: 'Restful',
+    icon: 'school',
+    link: '/restful',
+  },
 ]
 
 import { defineComponent, ref } from 'vue'

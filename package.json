@@ -31,6 +31,7 @@
   },
   "dependencies": {
     "@quasar/extras": "^1.0.0",
+    "@vue-composable/axios": "^1.0.0-beta.23",
     "@vue/composition-api": "^1.0.0-rc.10",
     "axios": "^0.21.1",
     "core-js": "^3.12.1",

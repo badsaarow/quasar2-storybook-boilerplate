@@ -3633,6 +3633,13 @@
     "@typescript-eslint/types" "4.26.0"
     eslint-visitor-keys "^2.0.0"
 
+"@vue-composable/axios@^1.0.0-beta.23":
+  version "1.0.0-beta.23"
+  resolved "https://registry.yarnpkg.com/@vue-composable/axios/-/axios-1.0.0-beta.23.tgz#b88dc7399cc927b2b893030bf5927b770cbabd10"
+  integrity sha512-ujkQ6BElrl/+cKeWA9scUM3NCdbA+WayP7wwNB7zIoTPM9eycf9+BSQOE747a8/Uposab+YwohFSLPTH3PFVoA==
+  dependencies:
+    vue-composable "^1.0.0-beta.23"
+
 "@vue/compiler-core@3.0.11":
   version "3.0.11"
   resolved "https://registry.yarnpkg.com/@vue/compiler-core/-/compiler-core-3.0.11.tgz#5ef579e46d7b336b8735228758d1c2c505aae69a"

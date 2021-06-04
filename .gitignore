@@ -35,3 +35,4 @@ storybook-static
 .history
 ZAP_WEEKLY*
 test/lighthouse/reports
+test/audits
