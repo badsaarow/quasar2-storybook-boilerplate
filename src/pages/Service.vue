@@ -37,11 +37,16 @@ export default defineComponent({
 
     watch(
       [() => store.getters['movie/isLoadInProgress'], () => store.getters['movie/data']],
-      ([loadInProgress, data]) => {
-        console.log('loadInProgress', loadInProgress)
-        isLoadInProgress.value = loadInProgress
-        console.log('data', data)
-        movieInfo.value = data.data
+      (newVal, prevVal) => {
+        if (newVal[0] !== prevVal[0]) {
+          console.log('loadInProgress', newVal[0])
+          isLoadInProgress.value = newVal[0]
+        }
+
+        if (newVal[1] !== prevVal[1]) {
+          console.log('data', newVal[1])
+          movieInfo.value = newVal[1].data
+        }
       }
     )
     const posterPath = ''
