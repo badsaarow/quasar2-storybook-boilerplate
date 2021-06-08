@@ -6,8 +6,17 @@ import { createStore, Store as VuexStore, useStore as vuexUseStore } from 'vuex'
 import user from './module-user'
 import { UserStateInterface } from './module-user/state'
 
+import movie from './module-movie'
+import { MovieStateInterface } from './module-movie/state'
+
 export interface StateInterface {
   user: UserStateInterface
+  movie: MovieStateInterface
+}
+
+export const moduleNames = {
+  user: 'search',
+  movie: 'movie',
 }
 
 // provide typings for `this.$store`
@@ -24,6 +33,7 @@ export default store(function (/* { ssrContext } */) {
   const Store = createStore({
     modules: {
       user,
+      movie,
     },
     // plugins: [createPersistedState()],
 

@@ -7,6 +7,7 @@ const routes: RouteRecordRaw[] = [
     children: [
       { path: '', component: () => import('pages/Home.vue') },
       { path: 'restful', component: () => import('pages/Restful.vue') },
+      { path: 'service', component: () => import('pages/Service.vue') },
     ],
   },
   // Always leave this as last one,
