@@ -2,8 +2,6 @@
 .thumbs.db
 node_modules
 
-# Quasar core related directories
-.quasar
 /dist
 
 # Cordova related directories and files
