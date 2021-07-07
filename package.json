@@ -38,6 +38,7 @@
     "core-js": "^3.12.1",
     "lodash": "^4.17.21",
     "quasar": "^2.0.1",
+    "swiper": "^6.7.5",
     "vue": "^3.0.11",
     "vue-composable": "^1.0.0-beta.23",
     "vue-i18n": "^9.1.6",

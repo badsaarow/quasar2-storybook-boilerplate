@@ -1,1 +1,14 @@
 // app global css in SCSS form
+.page {
+  z-index: 2000;
+  &-body {
+    &-spacer {
+      &-header {
+        height: 51px;
+      }
+      &-footer {
+        height: 73px;
+      }
+    }
+  }
+}

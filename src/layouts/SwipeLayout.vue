@@ -13,7 +13,7 @@
 
         <q-toolbar-title> Quasar2 Storybook Boilerplate </q-toolbar-title>
 
-        <div>Quasar2</div>
+        <div>Swipe Page</div>
       </q-toolbar>
     </q-header>
 
@@ -25,13 +25,37 @@
     </q-drawer>
 
     <q-page-container>
-      <router-view />
+      <swiper
+        :space-between="50"
+        :slides-per-view="1"
+        :history="{
+          key: 'slide',
+        }"
+        class="mySwiper"
+      >
+        <swiper-slide data-history="1">Slide 1</swiper-slide>
+        <swiper-slide data-history="Slide 2">Slide 2</swiper-slide>
+        <swiper-slide data-history="3">Slide 3</swiper-slide>
+        <swiper-slide data-history="Slide 4">Slide 4</swiper-slide>
+        <swiper-slide data-history="5">Slide 5</swiper-slide>
+        <swiper-slide data-history="Slide 6">Slide 6</swiper-slide>
+        <swiper-slide data-history="7">Slide 7</swiper-slide>
+        <swiper-slide data-history="Slide 8">Slide 8</swiper-slide>
+        <swiper-slide data-history="9">Slide 9</swiper-slide>
+      </swiper>
     </q-page-container>
   </q-layout>
 </template>
 
 <script lang="ts">
+import { defineComponent, ref } from 'vue'
+import { Swiper, SwiperSlide } from 'swiper/vue'
 import EssentialLink from 'components/EssentialLink.vue'
+
+import 'swiper/swiper.scss'
+import SwiperCore, { History } from 'swiper/core'
+
+SwiperCore.use([History])
 
 const linksData = [
   {
@@ -40,31 +64,11 @@ const linksData = [
     icon: 'school',
     link: '/',
   },
-  {
-    title: 'SwipeHome',
-    caption: 'SwipeHome',
-    icon: 'school',
-    link: '/swipe/',
-  },
-  {
-    title: 'Restful',
-    caption: 'Restful',
-    icon: 'school',
-    link: '/restful',
-  },
-  {
-    title: 'Service',
-    caption: 'Service',
-    icon: 'school',
-    link: '/service',
-  },
 ]
 
-import { defineComponent, ref } from 'vue'
-
 export default defineComponent({
-  name: 'MainLayout',
-  components: { EssentialLink },
+  name: 'SwipeLayout',
+  components: { EssentialLink, Swiper, SwiperSlide },
   setup() {
     const leftDrawerOpen = ref(false)
     const essentialLinks = ref(linksData)
