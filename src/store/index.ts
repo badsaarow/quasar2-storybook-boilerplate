@@ -9,14 +9,21 @@ import { UserStateInterface } from './module-user/state'
 import movie from './module-movie'
 import { MovieStateInterface } from './module-movie/state'
 
+import navItem from './module-nav-item'
+import { NavItemStateInterface } from './module-nav-item/state'
+
 export interface StateInterface {
+  usePageTransition: boolean
+  iosBrowserSwipingBack: boolean
   user: UserStateInterface
   movie: MovieStateInterface
+  navItem: NavItemStateInterface
 }
 
 export const moduleNames = {
   user: 'search',
   movie: 'movie',
+  navItem: 'navItem',
 }
 
 // provide typings for `this.$store`
@@ -31,9 +38,14 @@ export const storeKey: InjectionKey<VuexStore<StateInterface>> = Symbol('vuex-ke
 
 export default store(function (/* { ssrContext } */) {
   const Store = createStore({
+    state: () => ({
+      usePageTransition: false,
+      iosBrowserSwipingBack: false,
+    }),
     modules: {
       user,
       movie,
+      navItem,
     },
     // plugins: [createPersistedState()],
 
