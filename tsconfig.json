@@ -3,7 +3,8 @@
   "include": ["src/**/*.ts", "src/**/*.vue", "src/**/*.js"],
   "ignorePatterns": [".eslintrc.js"],
   "compilerOptions": {
-    "baseUrl": "./types",
+    "baseUrl": ".",
+    "lib": ["DOM", "ES2016", "ESNext"],
     "skipLibCheck": true,
     "esModuleInterop": true,
     "experimentalDecorators": true,

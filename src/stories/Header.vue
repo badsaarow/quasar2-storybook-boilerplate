@@ -21,26 +21,19 @@
         <h1>Acme</h1>
       </div>
       <div>
-        <my-button size="small" @click="$emit('logout')" label="Log out" v-if="user" />
-        <my-button size="small" @click="$emit('login')" label="Log in" v-if="!user" />
-        <my-button
-          primary
-          size="small"
-          @click="$emit('create-account')"
-          label="Sign up"
-          v-if="!user"
-        />
+        <my-button size="small" @onClick="onLogout" label="Log out" v-if="user" />
+        <my-button size="small" @onClick="onLogin" label="Log in" v-if="!user" />
+        <my-button primary size="small" @onClick="onCreateAccount" label="Sign up" v-if="!user" />
       </div>
     </div>
   </header>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue'
+<script>
 import './header.css'
 import MyButton from './Button.vue'
 
-export default defineComponent({
+export default {
   name: 'MyHeader',
 
   components: { MyButton },
@@ -48,24 +41,19 @@ export default defineComponent({
   props: {
     user: {
       type: Object,
-      default: undefined,
     },
   },
 
-  emits: ['login', 'logout', 'create-account'],
-
-  setup(_, { emit }) {
-    return {
-      onLogin() {
-        emit('login')
-      },
-      onLogout() {
-        emit('logout')
-      },
-      onCreateAccount() {
-        emit('create-account')
-      },
-    }
+  methods: {
+    onLogin() {
+      this.$emit('onLogin')
+    },
+    onLogout() {
+      this.$emit('onLogout')
+    },
+    onCreateAccount() {
+      this.$emit('onCreateAccount')
+    },
   },
-})
+}
 </script>

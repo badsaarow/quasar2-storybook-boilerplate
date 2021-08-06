@@ -1,29 +1,51 @@
 <template>
-  <div>
-    <lottie-animation
-      ref="anim"
-      :animation-data="animationData"
-      :loop="true"
-      :auto-play="true"
-      :speed="1"
-    />
-  </div>
+  <div ref="aniContainer" :style="style"></div>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
-import LottieAnimation from 'lottie-web-vue'
-import animationData from '../assets/cash-or-card.json'
+import { defineComponent, ref, onMounted } from 'vue'
+import lottie from 'lottie-web'
 
 export default defineComponent({
   name: 'Lottie',
-  components: {
-    LottieAnimation,
+  props: {
+    options: {
+      type: Object,
+      required: true,
+    },
+    height: {
+      type: String,
+      default: '100%',
+    },
+    width: {
+      type: String,
+      default: '100%',
+    },
   },
-  setup() {
-    console.log('return animationData')
+  setup(props, ctx) {
+    const aniContainer = ref<HTMLElment>()
+    const style = {
+      width: props.width,
+      height: props.height,
+      overflow: 'hidden',
+      margin: '0 auto',
+    }
+
+    onMounted(() => {
+      const anim = lottie.loadAnimation({
+        container: aniContainer.value as HTMLElment,
+        renderer: 'svg',
+        loop: !!props.options.loop,
+        autoplay: !!props.options.autoplay,
+        animationData: props.options.animationData,
+        rendererSettings: props.options.renderSettings,
+      })
+      ctx.emit('animCreated', anim)
+    })
+
     return {
-      animationData,
+      aniContainer,
+      style,
     }
   },
 })

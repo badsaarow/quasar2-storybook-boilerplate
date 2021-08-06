@@ -1,11 +1,6 @@
 <template>
   <article>
-    <my-header
-      :user="user"
-      @login="$emit('login')"
-      @logout="$emit('logout')"
-      @create-account="$emit('create-account')"
-    />
+    <my-header @onLogin="onLogin" @onLogout="onLogout" @onCreateAccount="onCreateAccount" />
 
     <section>
       <h2>Pages in Storybook</h2>
@@ -67,13 +62,16 @@ export default {
 
   components: { MyHeader },
 
-  props: {
-    user: {
-      type: Object,
-      default: undefined,
+  methods: {
+    onLogin() {
+      this.$emit('onLogin')
+    },
+    onLogout() {
+      this.$emit('onLogout')
+    },
+    onCreateAccount() {
+      this.$emit('onCreateAccount')
     },
   },
-
-  emits: ['login', 'logout', 'create-account'],
 }
 </script>
