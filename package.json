@@ -29,7 +29,8 @@
     "audit:licenses": "nlf --summary detail > ./test/audits/licenses.txt",
     "audit:lighthouse": "lighthouse http://localhost:3000 view --output-path=./test/lighthouse/reports/index.html --config-path=./test/lighthouse/configs/full-config.js",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "chromatic": "npx chromatic"
   },
   "dependencies": {
     "@quasar/extras": "^1.0.0",
@@ -75,6 +76,7 @@
     "babel-eslint": "^10.0.1",
     "babel-loader": "^8.2.2",
     "babel-preset-vue": "^2.0.2",
+    "chromatic": "^5.9.2",
     "css-loader": "^5.2.1",
     "cypress": "^7.1.0",
     "eslint": "^7.21.0",
