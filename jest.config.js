@@ -1,9 +1,11 @@
-const esModules = ['quasar/lang', 'lodash-es'].join('|')
+const esModules = ['quasar/lang', 'lodash-es'].join('|');
 
 /* eslint-env node */
 module.exports = {
   globals: {
     __DEV__: true,
+    // TODO: Remove if resolved natively
+    // See https://github.com/vuejs/vue-jest/issues/175
     'vue-jest': {
       pug: { doctype: 'html' },
     },
@@ -47,7 +49,6 @@ module.exports = {
   // See https://github.com/vuejs/vue-jest/issues/188#issuecomment-620750728
   moduleFileExtensions: ['vue', 'js', 'jsx', 'json', 'ts', 'tsx'],
   moduleNameMapper: {
-    '^quasar$': 'quasar/dist/quasar.common.js',
     '^~/(.*)$': '<rootDir>/$1',
     '^src/(.*)$': '<rootDir>/src/$1',
     '^app/(.*)$': '<rootDir>/$1',
@@ -66,9 +67,10 @@ module.exports = {
     //  (async) .babelrc, .babelrc.js, package.json, babel.config.js
     //  (sync) .babelrc, .babelrc.js, babel.config.js, package.json
     // https://github.com/tleunen/find-babel-config/issues/33
-    '^.+\\.vue$': 'vue-jest',
-    '.+\\.(css|styl|less|sass|scss|svg|png|jpg|ttf|woff|woff2)$': 'jest-transform-stub',
+    '.*\\.vue$': 'vue-jest',
+    '.+\\.(css|styl|less|sass|scss|svg|png|jpg|ttf|woff|woff2)$':
+      'jest-transform-stub',
   },
   transformIgnorePatterns: [`node_modules/(?!(${esModules}))`],
-  // snapshotSerializers: ['<rootDir>/node_modules/jest-serializer-vue'],
-}
+  snapshotSerializers: ['<rootDir>/node_modules/jest-serializer-vue'],
+};
