@@ -6,7 +6,9 @@
   "author": "sungyong<sungyong@gmail.com>",
   "private": true,
   "scripts": {
+    "prepare": "husky install",
     "lint": "eslint --ext .js,.ts,.vue ./",
+    "lint:fix": "yarn run lint --fix",
     "dev:storybook": "start-storybook -p 6007",
     "dev:browser": "quasar dev",
     "dev:android": "quasar dev -m cordova -T android",
@@ -80,6 +82,7 @@
     "css-loader": "^5.2.1",
     "cypress": "^7.1.0",
     "eslint": "^7.21.0",
+    "prettier": "prettier --write \"**/*.js\" \"!{node_modules,.next,.yalc}/**\"",
     "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-cypress": "^2.11.1",
     "eslint-plugin-jest": "^24.1.0",
@@ -87,9 +90,11 @@
     "eslint-plugin-vue": "^7.7.0",
     "eslint-webpack-plugin": "^2.5.3",
     "file-loader": "^6.2.0",
+    "husky": "^7.0.1",
     "jest": "^26.6.3",
     "jest-transform-stub": "^2.0.0",
     "lighthouse": "^7.3.0",
+    "lint-staged": ">=10",
     "mini-css-extract-plugin": "^1.4.1",
     "miragejs": "^0.1.41",
     "nlf": "^2.1.1",
@@ -119,5 +124,11 @@
   },
   "peerDependencies": {
     "@vue/eslint-config-typescript": "^7.0.0"
+  },
+  "lint-staged": {
+    "*.{ts,vue,js,css,md}": [
+      "yarn run prettier",
+      "yarn run lint:fix --cache"
+    ]
   }
 }
