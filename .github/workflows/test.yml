@@ -1,0 +1,34 @@
+name: Run Tests
+
+on:
+  push:
+    branches: [main, dependencies, develop]
+  pull_request:
+    branches: [main, dependencies, develop]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [12.x]
+
+    steps:
+      - uses: actions/checkout@v1
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - if: github.ref == 'ref/head/master' || github.ref == 'ref/head/develop'
+        name: yarn install and update snapshot
+        run: |
+          yarn install --frozen-lockfile
+          yarn run test:unit
+
+      - if: "!(github.ref == 'ref/head/master' || github.ref == 'ref/head/develop')"
+        name: npm install and test
+        run: |
+          yarn install --frozen-lockfile
+          yarn run test:unit:ci

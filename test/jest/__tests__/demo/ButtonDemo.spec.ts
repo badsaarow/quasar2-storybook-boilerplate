@@ -1,6 +1,9 @@
-import { mount } from '@vue/test-utils'
 import ButtonDemo from './ButtonDemo.vue'
 
+import { installQuasarPlugin } from '@quasar/quasar-app-extension-testing-unit-jest';
+import { mount } from '@vue/test-utils';
+
+installQuasarPlugin();
 describe('Button test', () => {
   const wrapper = mount(ButtonDemo, {})
   const buttonElement = wrapper.find('#mybutton')
