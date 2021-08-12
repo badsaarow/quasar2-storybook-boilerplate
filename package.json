@@ -6,7 +6,9 @@
   "author": "sungyong<sungyong@gmail.com>",
   "private": true,
   "scripts": {
+    "prepare": "husky install",
     "lint": "eslint --ext .js,.ts,.vue ./",
+    "lint:fix": "yarn run lint --fix",
     "dev:storybook": "start-storybook -p 6007",
     "dev:browser": "quasar dev",
     "dev:android": "quasar dev -m cordova -T android",
@@ -29,7 +31,9 @@
     "audit:licenses": "nlf --summary detail > ./test/audits/licenses.txt",
     "audit:lighthouse": "lighthouse http://localhost:3000 view --output-path=./test/lighthouse/reports/index.html --config-path=./test/lighthouse/configs/full-config.js",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "chromatic": "npx chromatic",
+    "concurrently:dev:jest": "concurrently \"quasar dev\" \"jest --watch\""
   },
   "dependencies": {
     "@quasar/extras": "^1.0.0",
@@ -55,6 +59,9 @@
     "@cypress/vue": "^3.0.1",
     "@cypress/webpack-dev-server": "^1.1.4",
     "@quasar/app": "^3.0.1",
+    "@quasar/quasar-app-extension-testing": "^1.0.3",
+    "@quasar/quasar-app-extension-testing-e2e-cypress": "^3.1.0",
+    "@quasar/quasar-app-extension-testing-unit-jest": "^3.0.0-alpha.3",
     "@storybook/addon-actions": "^6.3.6",
     "@storybook/addon-essentials": "^6.3.6",
     "@storybook/addon-links": "^6.3.6",
@@ -71,23 +78,27 @@
     "@typescript-eslint/parser": "^4.16.1",
     "@vue/compiler-sfc": "^3.0.11",
     "@vue/eslint-config-typescript": "^7.0.0",
-    "@vue/test-utils": "^1.2.1",
+    "@vue/test-utils": "^2.0.0-rc.11",
     "babel-eslint": "^10.0.1",
     "babel-loader": "^8.2.2",
     "babel-preset-vue": "^2.0.2",
+    "chromatic": "^5.9.2",
     "css-loader": "^5.2.1",
     "cypress": "^7.1.0",
     "eslint": "^7.21.0",
+    "prettier": "prettier --write \"**/*.js\" \"!{node_modules,.next,.yalc}/**\"",
     "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-cypress": "^2.11.1",
-    "eslint-plugin-jest": "^24.1.0",
+    "eslint-plugin-jest": "^24.3.6",
     "eslint-plugin-prettier": "^3.3.1",
     "eslint-plugin-vue": "^7.7.0",
     "eslint-webpack-plugin": "^2.5.3",
     "file-loader": "^6.2.0",
+    "husky": "^7.0.1",
     "jest": "^26.6.3",
     "jest-transform-stub": "^2.0.0",
     "lighthouse": "^7.3.0",
+    "lint-staged": ">=10",
     "mini-css-extract-plugin": "^1.4.1",
     "miragejs": "^0.1.41",
     "nlf": "^2.1.1",
@@ -96,8 +107,8 @@
     "ts-jest": "^26.5.5",
     "ts-node": "^10.0.0",
     "url-loader": "^4.1.1",
-    "vue-jest": "^3.0.7",
-    "vue-loader": "^15.9.8"
+    "vue-loader": "^15.9.8",
+    "vue3-jest": "^27.0.0-alpha.1"
   },
   "browserslist": [
     "last 10 Chrome versions",
@@ -117,5 +128,11 @@
   },
   "peerDependencies": {
     "@vue/eslint-config-typescript": "^7.0.0"
+  },
+  "lint-staged": {
+    "*.{ts,vue,js,css,md}": [
+      "yarn run prettier",
+      "yarn run lint:fix --cache"
+    ]
   }
 }

@@ -1,1 +1,20 @@
-{}
+{
+  "@quasar/testing": {
+    "harnesses": [
+      "unit-jest",
+      "e2e-cypress"
+    ]
+  },
+  "@quasar/testing-unit-jest": {
+    "babel": "babelrc",
+    "options": [
+      "scripts",
+      "typescript"
+    ]
+  },
+  "@quasar/testing-e2e-cypress": {
+    "options": [
+      "scripts"
+    ]
+  }
+}
