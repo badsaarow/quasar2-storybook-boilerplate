@@ -3,7 +3,14 @@
 /node_modules
 /src-ssr
 .eslintrc.js
+.postcssrc.js
+babel.config.js
+jest.config.js
+quasar.conf.js
+wallaby.js
 .quasar
 .storybook
 .vscode
 /storybook-static
+.github
+.husky

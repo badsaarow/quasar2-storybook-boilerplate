@@ -102,6 +102,7 @@
     "mini-css-extract-plugin": "^1.4.1",
     "miragejs": "^0.1.41",
     "nlf": "^2.1.1",
+    "postcss-import": "^14.0.2",
     "prettier": "2",
     "snyk": "^1.563.0",
     "ts-jest": "^26.5.5",

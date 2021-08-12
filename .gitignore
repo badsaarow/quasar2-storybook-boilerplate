@@ -36,3 +36,4 @@ ZAP_WEEKLY*
 test/lighthouse/reports
 test/audits
 /.eslintcache
+build-storybook.log
