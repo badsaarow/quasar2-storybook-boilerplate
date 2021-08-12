@@ -33,6 +33,7 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "chromatic": "npx chromatic",
+    "test": "echo \"See package.json => scripts for available tests.\" && exit 0",
     "concurrently:dev:jest": "concurrently \"quasar dev\" \"jest --watch\""
   },
   "dependencies": {
@@ -86,7 +87,6 @@
     "css-loader": "^5.2.1",
     "cypress": "^7.1.0",
     "eslint": "^7.21.0",
-    "prettier": "prettier --write \"**/*.js\" \"!{node_modules,.next,.yalc}/**\"",
     "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-cypress": "^2.11.1",
     "eslint-plugin-jest": "^24.3.6",
@@ -108,7 +108,9 @@
     "ts-node": "^10.0.0",
     "url-loader": "^4.1.1",
     "vue-loader": "^15.9.8",
-    "vue3-jest": "^27.0.0-alpha.1"
+    "vue3-jest": "^27.0.0-alpha.1",
+    "vue-jest": "^5.0.0-alpha.10",
+    "wallaby-vue-compiler": "^1.0.3"
   },
   "browserslist": [
     "last 10 Chrome versions",
@@ -134,5 +136,8 @@
       "yarn run prettier",
       "yarn run lint:fix --cache"
     ]
+  },
+  "resolutions": {
+    "vue-jest": "^5.0.0-alpha.10"
   }
 }

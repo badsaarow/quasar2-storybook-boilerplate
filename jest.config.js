@@ -4,8 +4,7 @@ const esModules = ['quasar/lang', 'lodash-es'].join('|');
 module.exports = {
   globals: {
     __DEV__: true,
-    // TODO: Remove if resolved natively
-    // See https://github.com/vuejs/vue-jest/issues/175
+    // TODO: Remove if resolved natively https://github.com/vuejs/vue-jest/issues/175
     'vue-jest': {
       pug: { doctype: 'html' },
     },
@@ -57,7 +56,7 @@ module.exports = {
     '^pages/(.*)$': '<rootDir>/src/pages/$1',
     '^assets/(.*)$': '<rootDir>/src/assets/$1',
     '^boot/(.*)$': '<rootDir>/src/boot/$1',
-    // '.*css$': '@quasar/quasar-app-extension-testing-unit-jest/stub.css',
+    '.*css$': '@quasar/quasar-app-extension-testing-unit-jest/stub.css',
   },
   transform: {
     // See https://jestjs.io/docs/en/configuration.html#transformignorepatterns-array-string

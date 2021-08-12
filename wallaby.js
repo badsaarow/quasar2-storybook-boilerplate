@@ -1,14 +1,9 @@
-/* eslint-disable @typescript-eslint/no-unsafe-return */
-/* eslint-disable @typescript-eslint/no-var-requires */
-/* eslint-disable @typescript-eslint/no-unsafe-call */
-/* eslint-disable @typescript-eslint/no-unsafe-member-access */
-/* eslint-disable @typescript-eslint/no-unsafe-assignment */
 module.exports = (wallaby) => {
-  process.env.VUE_CLI_BABEL_TRANSPILE_MODULES = true
+  process.env.VUE_CLI_BABEL_TRANSPILE_MODULES = true;
 
   const compiler = wallaby.compilers.babel({
     presets: [['@quasar/app', { modules: 'commonjs' }]],
-  })
+  });
 
   return {
     files: [
@@ -33,17 +28,18 @@ module.exports = (wallaby) => {
     },
 
     preprocessors: {
-      '**/*.vue': (file) => require('vue-jest').process(file.content, file.path),
+      '**/*.vue': (file) =>
+        require('vue-jest').process(file.content, file.path),
     },
 
     setup: function (wallaby) {
-      const jestConfig = require('./package').jest || require('./jest.config')
-      jestConfig.transform = {}
-      wallaby.testFramework.configure(jestConfig)
+      const jestConfig = require('./package').jest || require('./jest.config');
+      jestConfig.transform = {};
+      wallaby.testFramework.configure(jestConfig);
     },
 
     testFramework: 'jest',
 
     debug: true,
-  }
-}
+  };
+};
