@@ -2,6 +2,8 @@
 /src-cordova
 /node_modules
 /src-ssr
+/test
+/src/boot
 .eslintrc.js
 .postcssrc.js
 babel.config.js

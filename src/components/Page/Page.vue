@@ -13,7 +13,7 @@
         appear
         enter-active-class="animated slideInRight"
         leave-active-class="animated slideOutRight"
-        :css="store.state.usePageTransition && !store.state.iosBrowserSwipingBack"
+        :css="$store.state.usePageTransition && !$store.state.iosBrowserSwipingBack"
       >
         <keep-alive>
           <component
@@ -30,8 +30,6 @@
 <script>
 import { ref, onActivated, onDeactivated, computed } from 'vue'
 import { useQuasar } from 'quasar'
-import store from 'src/myStore'
-import useGoBack from 'src/use/useGoBack'
 
 export default {
   name: 'Page',
@@ -55,7 +53,7 @@ export default {
     onDeactivated(() => {
       emit('pageDeactivated')
       if (isIosBrowser.value) {
-        store.state.iosBrowserSwipingBack = false
+        $store.state.iosBrowserSwipingBack = false
       }
     })
 
@@ -65,9 +63,9 @@ export default {
 
     const handleSwipeRight = () => {
       if (isIosBrowser.value) {
-        store.state.iosBrowserSwipingBack = true
+        $store.state.iosBrowserSwipingBack = true
       } else {
-        useGoBack()
+        // GoBack
       }
     }
 

@@ -38,12 +38,6 @@ export default {
 
   components: { MyButton },
 
-  props: {
-    user: {
-      type: Object,
-    },
-  },
-
   methods: {
     onLogin() {
       this.$emit('onLogin')

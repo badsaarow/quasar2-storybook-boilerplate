@@ -3,13 +3,16 @@
   "include": [
     "src/**/*.ts",
     "src/**/*.vue",
-    "src/**/*.js"
+  ],
+  "exclude": [
+    "test/**/*"
   ],
   "ignorePatterns": [
     ".eslintrc.js"
   ],
   "compilerOptions": {
     "baseUrl": ".",
+    "target": "es6",
     "lib": [
       "DOM",
       "ES2016",
@@ -19,7 +22,8 @@
     "esModuleInterop": true,
     "experimentalDecorators": true,
     "useDefineForClassFields": true,
-    "noImplicitAny": false,
+    "noImplicitAny": true,
+    "moduleResolution": "node",
     "types": [
       "jest",
       "quasar"

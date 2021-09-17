@@ -15,7 +15,7 @@ module.exports = (wallaby) => {
       '!src/**/*.spec.js',
     ],
 
-    tests: ['src/**/*_spec.js', 'test/jest/**/*.spec.js'],
+    tests: ['src/**/*_spec.ts', 'test/jest/**/*.spec.ts'],
 
     env: {
       type: 'node',
@@ -24,6 +24,7 @@ module.exports = (wallaby) => {
 
     compilers: {
       '**/*.js': compiler,
+      '**/*.ts': compiler,
       '**/*.vue': require('wallaby-vue-compiler')(compiler),
     },
 

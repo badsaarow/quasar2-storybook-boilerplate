@@ -9,14 +9,6 @@ const routes: RouteRecordRaw[] = [
       { path: 'restful', component: () => import('pages/Restful.vue') },
       { path: 'service', component: () => import('pages/Service.vue') },
       { path: 'lottie', component: () => import('pages/LottieSample.vue') },
-      {
-        path: 'swipe',
-        component: () => import('layouts/SwipeLayout.vue'),
-        children: [
-          { path: '', component: () => import('pages/SwipeHome.vue') },
-          { path: 'next', component: () => import('pages/SwipeNext.vue') },
-        ],
-      },
     ],
   },
   // Always leave this as last one,

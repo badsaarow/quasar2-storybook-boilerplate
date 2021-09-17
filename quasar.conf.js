@@ -9,6 +9,7 @@
 /* eslint-env node */
 /* eslint-disable @typescript-eslint/no-var-requires */
 const { configure } = require('quasar/wrappers')
+const path = require('path')
 
 module.exports = configure(function (/*ctx*/) {
   return {
@@ -28,7 +29,7 @@ module.exports = configure(function (/*ctx*/) {
     // app boot file (/src/boot)
     // --> boot files are part of "main.js"
     // https://v2.quasar.dev/quasar-cli/boot-files
-    boot: ['global-components', 'i18n'],
+    boot: ['global-components'],
 
     // https://v2.quasar.dev/quasar-cli/quasar-conf-js#Property%3A-css
     css: ['app.scss'],
@@ -49,6 +50,12 @@ module.exports = configure(function (/*ctx*/) {
       vueRouterMode: 'hash', // available values: 'hash', 'history'
       // vueLoaderOptions: 'prop',
 
+      extendWebpack(cfg) {
+        cfg.resolve.alias = {
+          ...cfg.resolve.alias,
+          assets: path.resolve(__dirname, './src/assets'),
+        }
+      },
       // https://v2.quasar.dev/quasar-cli/handling-webpack
       // "chain" is a webpack-chain object https://github.com/neutrinojs/webpack-chain
       chainWebpack(/*chain*/) {
@@ -69,7 +76,13 @@ module.exports = configure(function (/*ctx*/) {
       iconSet: 'material-icons', // Quasar icon set
       lang: 'ko-KR', // Quasar language pack
       config: {},
-      plugins: [],
+      plugins: ['Notify', 'Loading', 'Dialog'],
+    },
+
+    config: {
+      notify: {
+        type: 'warning',
+      },
     },
 
     // animations: 'all', // --- includes all animations

@@ -13,23 +13,7 @@ module.exports = {
     // Needed to make the parser take into account 'vue' files
     extraFileExtensions: ['.vue'],
     parser: require.resolve('@typescript-eslint/parser'),
-    project: {
-      "extends": "@quasar/app/tsconfig-preset",
-      "include": ["src/**/*.ts", "src/**/*.vue", "test/**/*.ts", "src/**/*.js"],
-      "ignorePatterns": [".eslintrc.js"],
-      "compilerOptions": {
-        "baseUrl": "./types",
-        "skipLibCheck": true,
-        "esModuleInterop": true,
-        "experimentalDecorators": true,
-        "useDefineForClassFields": true,
-        "types": [
-          "jest",
-          "quasar"
-        ]
-      }
-    },
-
+    project: './tsconfig.eslint.json',
     tsconfigRootDir: __dirname,
     ecmaVersion: 2021, // Allows for the parsing of modern ECMAScript features
     sourceType: 'module' // Allows for the use of imports
