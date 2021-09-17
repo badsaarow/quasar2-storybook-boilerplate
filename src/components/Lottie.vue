@@ -23,7 +23,7 @@ export default defineComponent({
     },
   },
   setup(props, ctx) {
-    const aniContainer = ref<HTMLElment>()
+    const aniContainer = ref<Element>()
     const style = {
       width: props.width,
       height: props.height,
@@ -33,7 +33,7 @@ export default defineComponent({
 
     onMounted(() => {
       const anim = lottie.loadAnimation({
-        container: aniContainer.value as HTMLElment,
+        container: aniContainer.value as Element,
         renderer: 'svg',
         loop: !!props.options.loop,
         autoplay: !!props.options.autoplay,

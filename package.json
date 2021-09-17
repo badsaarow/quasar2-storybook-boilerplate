@@ -9,6 +9,7 @@
     "prepare": "husky install",
     "lint": "eslint --ext .js,.ts,.vue ./",
     "lint:fix": "yarn run lint --fix",
+    "dev": "quasar dev",
     "dev:storybook": "start-storybook -p 6007",
     "dev:browser": "quasar dev",
     "dev:android": "quasar dev -m cordova -T android",

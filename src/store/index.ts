@@ -38,10 +38,6 @@ export const storeKey: InjectionKey<VuexStore<StateInterface>> = Symbol('vuex-ke
 
 export default store(function (/* { ssrContext } */) {
   const Store = createStore({
-    state: () => ({
-      usePageTransition: false,
-      iosBrowserSwipingBack: false,
-    }),
     modules: {
       user,
       movie,

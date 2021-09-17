@@ -1,6 +1,5 @@
 <template>
   <q-page class="row items-center justify-evenly">
-    <h1>Swipe Next</h1>
     <q-select
       filled
       v-model="selectedAnimation"
@@ -22,8 +21,9 @@
 import { defineComponent, ref, watch } from 'vue'
 import Lottie from 'components/Lottie.vue'
 import * as ani01 from 'assets/lottie/lottie.json'
+import * as ani02 from 'assets/lottie/astrolottie.json'
 
-const lottieFiles = [ani01]
+const lottieFiles = [ani01, ani02]
 
 export default defineComponent({
   name: 'LottieSample',
