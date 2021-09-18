@@ -12,6 +12,7 @@
   ],
   "compilerOptions": {
     "baseUrl": ".",
+    "typeRoots": ["types"],
     "target": "es6",
     "lib": [
       "DOM",

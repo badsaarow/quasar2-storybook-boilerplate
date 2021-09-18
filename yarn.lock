@@ -15141,6 +15141,11 @@ slice-ansi@^4.0.0:
     astral-regex "^2.0.0"
     is-fullwidth-code-point "^3.0.0"
 
+smooth-dnd@0.12.1, smooth-dnd@^0.12.1:
+  version "0.12.1"
+  resolved "https://registry.yarnpkg.com/smooth-dnd/-/smooth-dnd-0.12.1.tgz#cdb44c972355659e32770368b29b6a80e0ed96f1"
+  integrity sha512-Dndj/MOG7VP83mvzfGCLGzV2HuK1lWachMtWl/Iuk6zV7noDycIBnflwaPuDzoaapEl3Pc4+ybJArkkx9sxPZg==
+
 snapdragon-node@^2.0.1:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/snapdragon-node/-/snapdragon-node-2.1.1.tgz#6c175f86ff14bdb0724563e8f3c1b021a286853b"
@@ -17025,6 +17030,13 @@ vue3-jest@^27.0.0-alpha.1:
     extract-from-css "^0.4.4"
     source-map "0.5.6"
     tsconfig "^7.0.0"
+
+vue3-smooth-dnd@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/vue3-smooth-dnd/-/vue3-smooth-dnd-0.0.2.tgz#779c885754466b55930de8bfd0a13adc889782d7"
+  integrity sha512-5OlpoZ1fmpA1CcjvRwJ9P3MEPZ0nnnYuIf/9zMGKF8i7jTE6fQX3oeY0jDHNtOjuCmvTSbc0AYq18M9QIF32Ew==
+  dependencies:
+    smooth-dnd "^0.12.1"
 
 vue@3.2.4:
   version "3.2.4"

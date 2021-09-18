@@ -1,6 +1,7 @@
 <template>
   <q-page class="row items-center justify-evenly">
     <q-btn to="lottie">Lottie Animation Sample</q-btn>
+    <q-btn to="smoothdnd">Smooth DND Sample</q-btn>
     <hr />
     <example-component title="Landing Page" active :todos="todos" :meta="meta"></example-component>
     <p>lodash random number: {{ lodashRandom() }}</p>

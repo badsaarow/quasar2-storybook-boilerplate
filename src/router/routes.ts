@@ -9,6 +9,7 @@ const routes: RouteRecordRaw[] = [
       { path: 'restful', component: () => import('pages/Restful.vue') },
       { path: 'service', component: () => import('pages/Service.vue') },
       { path: 'lottie', component: () => import('pages/LottieSample.vue') },
+      { path: 'smoothdnd', component: () => import('pages/SmoothDndSample.vue') },
     ],
   },
   // Always leave this as last one,
