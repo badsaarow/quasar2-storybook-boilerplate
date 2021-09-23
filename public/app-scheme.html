@@ -1,0 +1,44 @@
+<script src="https://unpkg.com/petite-vue" defer init></script>
+<script>
+  const isDevice = () => {
+    return 'itzy' in window
+  }
+  const isAndroid = () => {
+    return /android/i.test(navigator.userAgent.toLowerCase())
+  }
+  const isIOS = () => {
+    return /iphone/i.test(navigator.userAgent.toLowerCase())
+  }
+
+  const isBrowser = () => {
+    return !isDevice()
+  }
+
+  const openApp = () => {
+    console.log('openApp')
+    let url
+    if (isAndroid()) {
+      url = 'intent://itzy/#Intent; scheme-itzy;package-kr.co.itzy'
+      window.Location.replace(uri)
+    } else if (isIOS()) {
+      url = 'itzy://'
+      window.location.replace(url)
+      setTimeout(() => {
+        const appStoreUrl = 'https://apps.apple.com/kr/app/instagram/id389801252'
+        window.Location.replace(appStoreurL)
+      }, 10 * 1000)
+    } else {
+      url = 'https://twitter.com/ITZYofficial'
+      window.Location.replace(urL)
+    }
+  }
+</script>
+
+<div v-scope="{ count: 0 } @mounted-" openApp()">
+  <h1>ITZY LOCO</h1>
+
+  {{ count }}
+
+  <button @click="count++">inc</button>
+
+</div>

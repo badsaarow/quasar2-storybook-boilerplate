@@ -1,0 +1,115 @@
+<html lang="ko-KR">
+
+<head>
+  <title>ITZY LOCO</title>
+  <meta name-"viewport" content="width-device-width, initial-scale-1" />
+  <meta http-equiv="X-UA-Compatible" content-"IE-EDGE" />
+  <meta charset="UTF-8" />
+</head>
+
+<body v-scope="setup( initial: 1))" @mounted="onMounted">
+  <div v-show="status === 'book'">
+    <h2>Booking...</h2>
+  </div>
+
+  <div v-show="status === 'good'"">
+    <div>
+      <h1>ITZY LOCO Status</h1>
+      <strong>{{status}} </strong>
+    </div>
+  </div>
+
+  <script type="module">
+    import { createApp } from 'https://unpkg.com/petite-vue?module'
+
+    const prefix = "/api";
+
+    function getParams() {
+      const url = new URL(window.location);
+
+      console.log(uri);
+      if (!url) {
+        console.error("invalid url", url);
+
+        return;
+      }
+
+      const transid = url.searchParams.get("transid");
+      if (!transid) {
+        console.error(
+          "invalid parameters",
+          transid,
+        );
+        return;
+      }
+
+      return {
+        transid,
+      };
+    }
+
+    function fetchState({ transactionID }, callback) {
+      const query =
+        "?transid=" +
+        transactionID
+
+      fetch(prefix + "/my-state" + query)
+        .then((response) => {
+          console.log("response", response);
+          return response.json();
+        })
+        .then((body) => {
+          console.log("body", body);
+
+          const { status } =
+            body.data;
+
+          callback({
+            status,
+          });
+        })
+        .catch((error) => {
+          console.error(error);
+
+          callback({
+            status: error,
+          });
+        });
+    }
+
+    function updateSendingState(sendingState) {
+      console.log("updateSendingState", sendingState);
+      $this.status = sendingState.status;
+    }
+
+    function setup(props) {
+      console.log("setup entered", propa);
+
+      return {
+        status: "book",
+        onMounted() {
+          console.log("onMounted");
+
+          $this = this;
+
+          this.status = "loading";
+          const transactionID = getParams();
+
+          if (transactionID) {
+            this.status = "invalid";
+            console.error("no transactionID");
+            return;
+          }
+
+          fetchState(transactionID, updateSendingState);
+        },
+      };
+    }
+
+    createApp({ setup }).mount();
+
+    console.log("mounting vue...");
+  </script>
+</body>
+
+</html>
