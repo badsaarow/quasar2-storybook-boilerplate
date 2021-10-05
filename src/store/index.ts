@@ -1,7 +1,7 @@
 import { store } from 'quasar/wrappers'
 import { InjectionKey } from 'vue'
 import { createStore, Store as VuexStore, useStore as vuexUseStore } from 'vuex'
-// import createPersistedState from 'vuex-persistedstate'
+import createPersistedState from 'vuex-persistedstate'
 
 import user from './module-user'
 import { UserStateInterface } from './module-user/state'
@@ -43,7 +43,7 @@ export default store(function (/* { ssrContext } */) {
       movie,
       navItem,
     },
-    // plugins: [createPersistedState()],
+    plugins: [createPersistedState()],
 
     // enable strict mode (adds overhead!)
     // for dev mode only

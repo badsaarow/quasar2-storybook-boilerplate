@@ -6,8 +6,8 @@ const actions: ActionTree<MovieStateInterface, StateInterface> = {
   loadStarted(context) {
     context.commit('loadStarted')
   },
-  loadCompleted(context) {
-    context.commit('loadCompleted')
+  loadCompleted(context, payload: any) {
+    context.commit('loadCompleted', payload)
   },
 }
 
