@@ -1,5 +1,11 @@
+export interface NavItemType {
+  root: string
+  to: string
+  icon: string
+  label: string
+}
 export interface NavItemStateInterface {
-  navItems: any
+  navItems: Array<NavItemType>
 }
 
 function state(): NavItemStateInterface {

@@ -3625,12 +3625,12 @@
     "@typescript-eslint/types" "4.31.1"
     eslint-visitor-keys "^2.0.0"
 
-"@vue-composable/axios@^1.0.0-beta.23":
-  version "1.0.0-beta.23"
-  resolved "https://registry.yarnpkg.com/@vue-composable/axios/-/axios-1.0.0-beta.23.tgz#b88dc7399cc927b2b893030bf5927b770cbabd10"
-  integrity sha512-ujkQ6BElrl/+cKeWA9scUM3NCdbA+WayP7wwNB7zIoTPM9eycf9+BSQOE747a8/Uposab+YwohFSLPTH3PFVoA==
+"@vue-composable/axios@^1.0.0-dev.0":
+  version "1.0.0-dev.37"
+  resolved "https://registry.yarnpkg.com/@vue-composable/axios/-/axios-1.0.0-dev.37.tgz#effac8c9fe3df8d165a2a1c7ae5c1972e71b1037"
+  integrity sha512-wxhZEBiEkUnLuP899V4c4gggm2Soy73ef57hHhLivcAj7WqorPKgxocyce9Y8+TbpRVMDMswBPc1B5D0wEu5qw==
   dependencies:
-    vue-composable "^1.0.0-beta.23"
+    vue-composable "^1.0.0-alpha.32"
 
 "@vue/cli-overlay@^5.0.0-beta.4":
   version "5.0.0-beta.4"
@@ -16882,12 +16882,17 @@ void-elements@^3.1.0:
   resolved "https://registry.yarnpkg.com/void-elements/-/void-elements-3.1.0.tgz#614f7fbf8d801f0bb5f0661f5b2f5785750e4f09"
   integrity sha1-YU9/v42AHwu18GYfWy9XhXUOTwk=
 
-vue-composable@^1.0.0-beta.23:
+vue-composable@^1.0.0-alpha.32:
   version "1.0.0-beta.23"
   resolved "https://registry.yarnpkg.com/vue-composable/-/vue-composable-1.0.0-beta.23.tgz#1085bcd8360d9ed309ec5c33e8242611790cd5c5"
   integrity sha512-jtlEHcaLbN6ENHIiqABeBmGbtUuUEKCRaByerHudlpEcHTN4B47P/uRcrg93iL1iuWHl9OQeRqkyFIzjCF3MTQ==
   dependencies:
     "@vue/devtools-api" "^6.0.0-beta.3"
+
+vue-composable@^1.0.0-dev.0:
+  version "1.0.0-dev.37"
+  resolved "https://registry.yarnpkg.com/vue-composable/-/vue-composable-1.0.0-dev.37.tgz#7120819eef2d2eeb9fed307218e968a1744b8796"
+  integrity sha512-JxCr1FNXbQgQdwqL+yi8cPOP8aN4L19D6UohDAQzKhqo9XQS/Aqn8e59wW+pdKBK5lHJLgN3wtjU1NI5N5SgUw==
 
 vue-demi@*:
   version "0.11.4"
