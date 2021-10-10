@@ -2,6 +2,7 @@ import { store } from 'quasar/wrappers'
 import { InjectionKey } from 'vue'
 import { createStore, Store as VuexStore, useStore as vuexUseStore } from 'vuex'
 import createPersistedState from 'vuex-persistedstate'
+import SecureLS from 'secure-ls'
 
 import user from './module-user'
 import { UserStateInterface } from './module-user/state'
@@ -36,6 +37,8 @@ declare module '@vue/runtime-core' {
 // provide typings for `useStore` helper
 export const storeKey: InjectionKey<VuexStore<StateInterface>> = Symbol('vuex-key')
 
+const secureLs = new SecureLS({ isCompression: false })
+
 export default store(function (/* { ssrContext } */) {
   const Store = createStore({
     modules: {
@@ -43,7 +46,15 @@ export default store(function (/* { ssrContext } */) {
       movie,
       navItem,
     },
-    plugins: [createPersistedState()],
+    plugins: [
+      createPersistedState({
+        storage: {
+          getItem: (key) => secureLs.get(key),
+          setItem: (key, value) => secureLs.set(key, value),
+          removeItem: (key) => secureLs.remove(key),
+        },
+      }),
+    ],
 
     // enable strict mode (adds overhead!)
     // for dev mode only
