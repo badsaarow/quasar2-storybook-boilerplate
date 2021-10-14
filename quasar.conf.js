@@ -77,11 +77,10 @@ module.exports = configure(function (/*ctx*/) {
       lang: 'ko-KR', // Quasar language pack
       config: {},
       plugins: ['Notify', 'Loading', 'Dialog'],
-    },
-
-    config: {
-      notify: {
-        type: 'warning',
+      config: {
+        notify: {
+          type: 'warning',
+        },
       },
     },
 

@@ -10,6 +10,7 @@ const routes: RouteRecordRaw[] = [
       { path: 'service', component: () => import('pages/Service.vue') },
       { path: 'service', component: () => import('pages/Service.vue') },
       { path: 'persisted', component: () => import('pages/PersistedStore.vue') },
+      { path: 'modal', component: () => import('pages/DialogSample.vue') },
     ],
   },
   // Always leave this as last one,
