@@ -6,7 +6,7 @@ Quasar2 Storybook Boilerplate
 ## Prerequisition
 
 - node 14, npm, android studio, xcode
-- For windows, set script-shell to pwsh
+- For windows, set script-shell to pwsh or git bash
 
 ```pwsh
 npm config set script-shell pwsh --userconfig ~/.npmrc
