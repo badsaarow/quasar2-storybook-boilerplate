@@ -2,7 +2,7 @@ import { sleepAsync } from '../utils'
 
 // put your own tmdb access token here to make the app work.
 // you can register and get one here: https://www.themoviedb.org/signup
-const accessToken = 'USE YOUR TOKEN'
+const accessToken = process.env.TMDB_ACCESS_KEY
 
 const baseUrl = 'https://api.themoviedb.org/3'
 const authHeader = {
