@@ -47,7 +47,7 @@
     "core-js": "^3.17.3",
     "crypto-js": "^4.1.1",
     "lodash": "^4.17.21",
-    "lottie-web": "^5.7.12",
+    "lottie-web": "^5.8.1",
     "quasar": "^2.1.0",
     "secure-ls": "^1.2.6",
     "swiper": "^6.8.2",
