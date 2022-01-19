@@ -1982,10 +1982,10 @@
     core-js "^3.6.5"
     core-js-compat "^3.6.5"
 
-"@quasar/extras@^1.11.0":
-  version "1.11.4"
-  resolved "https://registry.yarnpkg.com/@quasar/extras/-/extras-1.11.4.tgz#60cf6f0f9a55c860cf4ef66664fa8290040ea185"
-  integrity sha512-1Pyeazf2xnR3baELRB8eFU2paTCHJ3jqyOF8Qu3v+SksZYxav2Es1fD+qSgNDZLdcM87eZsUecmDqhvynJ0LIw==
+"@quasar/extras@^1.11.5":
+  version "1.12.1"
+  resolved "https://registry.yarnpkg.com/@quasar/extras/-/extras-1.12.1.tgz#859f7ac79789f840c1d51f994f5bfd5046b1f261"
+  integrity sha512-EwOnaJEDHo9zCnJzd1sFw1sfMAAq8cJaIjzr2+A9o2NcVLaIhD7YAaJdlIdcNmQnyuPAiq9NghUize8lCS0epw==
 
 "@quasar/fastclick@1.1.4":
   version "1.1.4"
