@@ -13,7 +13,6 @@
 import { Todo, Meta } from '../components/models'
 import ExampleComponent from '../components/CompositionComponent.vue'
 import { defineComponent, ref } from 'vue'
-import _ from 'lodash'
 
 export default defineComponent({
   name: 'Home',
@@ -22,7 +21,7 @@ export default defineComponent({
     const todos = ref<Todo[]>([
       {
         id: 1,
-        content: 'ct1',
+        content: 'ct101',
       },
       {
         id: 2,
@@ -45,7 +44,7 @@ export default defineComponent({
       totalCount: 1200,
     })
     const lodashRandom = () => {
-      return _.random(20)
+      return [1, 2, 3, 4, 5]
     }
     return { todos, meta, lodashRandom }
   },

@@ -1,15 +1,6 @@
 <template>
   <header
-    class="
-      page-header
-      q-header
-      q-layout__section--marginal
-      fixed-top
-      q-header--bordered
-      absolute-top
-      bg-white
-      text-dark
-    "
+    class="page-header q-header q-layout__section--marginal fixed-top q-header--bordered absolute-top bg-white text-dark"
   >
     <div class="q-toolbar row no-wrap items-center">
       <slot name="buttons-left" />
