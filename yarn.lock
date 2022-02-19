@@ -1908,7 +1908,7 @@
   resolved "https://registry.yarnpkg.com/@positron/stack-trace/-/stack-trace-1.0.0.tgz#14fcc712a530038ef9be1ce6952315a839f466a8"
   integrity sha1-FPzHEqUwA475vhzmlSMVqDn0Zqg=
 
-"@quasar/app@^3.0.1":
+"@quasar/app@^3.3.3":
   version "3.3.3"
   resolved "https://registry.yarnpkg.com/@quasar/app/-/app-3.3.3.tgz#f4771abd7d0806845aa72ca4e0baff9a8fdc03e5"
   integrity sha512-REWlQpGxo0oNDEyeqP1eoKofSYjt7g0QFesz6ZTJH1OBC79VajlHLrYpiFljlgjzwlabqX2cCF0ncYDv9WPxsA==
@@ -3689,7 +3689,7 @@
   resolved "https://registry.yarnpkg.com/@vue/cli-plugin-vuex/-/cli-plugin-vuex-5.0.1.tgz#7d277989e896db88588b4a0875314fe6576bf243"
   integrity sha512-5J/n+Ht4r2eVuncwCXcZPHzYCz/2haktle4WcggWiKeg3jSQVUJbjviPBs6sOo3y/LG3CEfZMP9bPJjVDbexpQ==
 
-"@vue/cli-service@^5.0.0-beta.4":
+"@vue/cli-service@^5.0.1":
   version "5.0.1"
   resolved "https://registry.yarnpkg.com/@vue/cli-service/-/cli-service-5.0.1.tgz#72abd40acb75ca7a6efcb06b502d2cdb90f2c745"
   integrity sha512-lhTW1d8waZv1VaRSvhE5pWWfkdmAgRTRSluDfyxkehZHMAWi//rd7a9zppN3k9Zr4X3oYVii+u7wR/RcTlr9cQ==
@@ -3786,7 +3786,7 @@
     "@vue/compiler-core" "3.2.31"
     "@vue/shared" "3.2.31"
 
-"@vue/compiler-sfc@3.2.31", "@vue/compiler-sfc@^3.2.0", "@vue/compiler-sfc@^3.2.11":
+"@vue/compiler-sfc@3.2.31", "@vue/compiler-sfc@^3.2.0", "@vue/compiler-sfc@^3.2.31":
   version "3.2.31"
   resolved "https://registry.yarnpkg.com/@vue/compiler-sfc/-/compiler-sfc-3.2.31.tgz#d02b29c3fe34d599a52c5ae1c6937b4d69f11c2f"
   integrity sha512-748adc9msSPGzXgibHiO6T7RWgfnDcVQD+VVwYgSsyyY8Ans64tALHZANrKtOzvkwznV/F4H7OAod/jIlp/dkQ==
@@ -13799,7 +13799,7 @@ qs@~6.5.2:
   resolved "https://registry.yarnpkg.com/qs/-/qs-6.5.3.tgz#3aeeffc91967ef6e35c0e488ef46fb296ab76aad"
   integrity sha512-qxXIEh4pCGfHICj1mAJQ2/2XVZkjCDTcEgfoSQxc/fYivUZxTkk7L3bDBJSoNrEzXI17oUO5Dp07ktqE5KzczA==
 
-quasar@^2.4.2:
+quasar@^2.5.5:
   version "2.5.5"
   resolved "https://registry.yarnpkg.com/quasar/-/quasar-2.5.5.tgz#942996e10a548c5f8a368b51d3432da21043d25a"
   integrity sha512-7UntzqIBih+xZLCB/f9pxuvNP3EBgexfQDbf8r9p58DHWAiSQwamLjcRHKqmujjp0uX1QChtp6oUxEkK+sFKtA==
@@ -16830,7 +16830,7 @@ vue3-jest@^27.0.0-alpha.1:
     source-map "0.5.6"
     tsconfig "^7.0.0"
 
-vue@^3.2.27:
+vue@^3.2.31:
   version "3.2.31"
   resolved "https://registry.yarnpkg.com/vue/-/vue-3.2.31.tgz#e0c49924335e9f188352816788a4cca10f817ce6"
   integrity sha512-odT3W2tcffTiQCy57nOT93INw1auq5lYLLYtWpPYQQYQOOdHiqFct9Xhna6GJ+pJQaF67yZABraH47oywkJgFw==
