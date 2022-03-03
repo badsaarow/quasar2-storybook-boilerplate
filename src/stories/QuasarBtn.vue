@@ -1,5 +1,13 @@
 <template>
-  <q-btn :label="label" :flat="flat" :dense="dense" :round="round" :icon="icon" @click="onClick" />
+  <q-btn
+    :label="label"
+    :color="color"
+    :flat="flat"
+    :dense="dense"
+    :round="round"
+    :icon="icon"
+    @click="onClick"
+  />
 </template>
 
 <script lang="ts">
@@ -15,6 +23,10 @@ export default defineComponent({
     label: {
       type: String,
       default: 'Button',
+    },
+    color: {
+      type: String,
+      default: 'Primary',
     },
     flat: {
       type: Boolean,
@@ -41,3 +53,10 @@ export default defineComponent({
   },
 })
 </script>
+
+<style>
+.q-btn .q-btn--actionable::before {
+  background-color: rgba(var(--q-accent), 0.8);
+  border-bottom: 1px solid var(--q-accent);
+}
+</style>

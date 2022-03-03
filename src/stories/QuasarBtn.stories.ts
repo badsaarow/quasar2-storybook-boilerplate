@@ -17,11 +17,37 @@ const Template: Story = (args) => ({
   template: '<my-button v-bind="args" />',
 })
 
-export const Primary = Template.bind({})
-Primary.args = {
+export const Accent = Template.bind({})
+Accent.args = {
   flat: true,
   dense: true,
   round: true,
   icon: 'menu',
-  label: 'Button',
+  color: 'accent',
+  label: 'Accent',
+}
+export const Negative = Template.bind({})
+Negative.args = {
+  color: 'negative',
+  label: 'Negative',
+}
+export const Primary = Template.bind({})
+Primary.args = {
+  color: 'primary',
+  label: 'Primary',
+}
+export const Secondary = Template.bind({})
+Secondary.args = {
+  color: 'secondary',
+  label: 'Secondary',
+}
+export const Amber = Template.bind({})
+Amber.args = {
+  color: 'amber',
+  label: 'Amber',
+}
+export const Purple = Template.bind({})
+Purple.args = {
+  color: 'purple',
+  label: 'Purple',
 }
