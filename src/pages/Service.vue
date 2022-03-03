@@ -47,7 +47,7 @@ export default defineComponent({
           console.log('data', newVal[1])
           movieInfo.value = newVal[1].data
         }
-      }
+      },
     )
     const posterPath = ''
 
