@@ -16,4 +16,5 @@ wallaby.js
 /storybook-static
 .github
 .husky
+jest.setup.js
 *.md
