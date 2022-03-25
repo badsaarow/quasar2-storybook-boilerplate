@@ -47,7 +47,7 @@
     "axios": "^0.26.0",
     "core-js": "^3.20.1",
     "crypto-js": "^4.1.1",
-    "lottie-web": "^5.7.12",
+    "lottie-web": "^5.9.1",
     "quasar": "^2.5.5",
     "secure-ls": "^1.2.6",
     "swiper": "^8.0.6",
