@@ -26,7 +26,9 @@
     "miragejs",
     "Parens",
     "persistedstate",
+    "Serializers",
     "sharec",
-    "sigalg"
+    "sigalg",
+    "styl"
   ]
 }
