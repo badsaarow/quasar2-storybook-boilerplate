@@ -17,5 +17,16 @@
       ],
       "url": "https://on.cypress.io/cypress.schema.json"
     }
+  ],
+  "cSpell.words": [
+    "browserslist",
+    "digestalg",
+    "flexbugs",
+    "logux",
+    "miragejs",
+    "Parens",
+    "persistedstate",
+    "sharec",
+    "sigalg"
   ]
 }

@@ -3,7 +3,7 @@
 Quasar2 Storybook Boilerplate
 <https://quasar2-storybook-boilerplate-5ppdanscg-badsaarow.vercel.app/>
 
-## Prerequisition
+## Prerequisites
 
 - node 14, npm, android studio, xcode
 - For windows, set script-shell to pwsh or git bash
@@ -13,6 +13,7 @@ npm config set script-shell pwsh --userconfig ~/.npmrc
 ```
 
 ```bash
+sudo npx playwright install-deps
 sudo npm install -g yarn cordova @quasar/cli @quasar/icongenie
 yarn
 cd src-cordova
@@ -21,7 +22,7 @@ cordova requirements
 
 ### auth snyk
 
-- Checking licence requires snyk login
+- Checking license requires snyk login
 
 ```bash
 node_modules/.bin/snyk auth
@@ -31,15 +32,15 @@ node_modules/.bin/snyk auth
 
 ```bash
 yarn run dev:browser
-yarn run dev:android
-yarn run dev:ios
+# yarn run dev:android
+# yarn run dev:ios
 ```
 
 ### storybook
 
 ```bash
 yarn run dev:storybook
-yarn run build:storybook
+# yarn run build:storybook
 ```
 
 ### Lint the files
@@ -74,6 +75,8 @@ yarn run audit:lighthouse
 ### Build the app for production
 
 ```bash
+yarn run build
+yarn run build:storybook
 yarn run build:android
 yarn run build:ios
 ```
@@ -90,7 +93,7 @@ jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore <your-release-k
 
 ### Cautions
 
-- DO NOT Upgrate to webpack5 : quasar does not support webpack5 yet
+- DO NOT Upgrade to webpack5 : quasar does not support webpack5 yet
 
 ### Troubleshooting
 
