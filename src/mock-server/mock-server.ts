@@ -1,7 +1,8 @@
-import { Server } from 'miragejs'
+import { createServer } from 'miragejs'
 
-const createMockServer = ({ environment = 'development' } = {}) => {
-  return new Server({
+export function MockServer({ environment = 'development' }) {
+  console.info('Mock server started')
+  return createServer({
     environment,
     routes() {
       this.get('/api/tasks', () => ({
@@ -76,5 +77,3 @@ const createMockServer = ({ environment = 'development' } = {}) => {
     },
   })
 }
-
-export default createMockServer

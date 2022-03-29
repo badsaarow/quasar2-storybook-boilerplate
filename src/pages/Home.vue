@@ -2,6 +2,7 @@
   <q-page class="row items-center justify-evenly">
     <q-btn to="persisted" label="Go to PersistedStore" />
     <q-btn to="modal" label="Go to DialogSample" />
+    <q-btn to="service">miragejs</q-btn>
     <q-btn to="lottie">Lottie Animation Sample</q-btn>
     <hr />
     <example-component title="Landing Page" active :todos="todos" :meta="meta"></example-component>

@@ -8,7 +8,6 @@ const routes: RouteRecordRaw[] = [
       { path: '', component: () => import('pages/Home.vue') },
       { path: 'restful', component: () => import('pages/Restful.vue') },
       { path: 'service', component: () => import('pages/Service.vue') },
-      { path: 'service', component: () => import('pages/Service.vue') },
       { path: 'persisted', component: () => import('pages/PersistedStore.vue') },
       { path: 'modal', component: () => import('pages/DialogSample.vue') },
     ],
