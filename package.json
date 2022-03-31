@@ -41,7 +41,7 @@
     "@vue-composable/axios": "^1.0.0-dev.0",
     "@vue/composition-api": "^1.4.3",
     "@vueuse/core": "^7.7.0",
-    "axios": "^0.26.0",
+    "axios": "^0.26.1",
     "core-js": "^3.20.1",
     "crypto-js": "^4.1.1",
     "lottie-web": "^5.9.1",
