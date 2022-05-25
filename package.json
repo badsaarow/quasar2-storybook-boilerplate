@@ -37,7 +37,7 @@
     "concurrently:dev:jest": "concurrently \"quasar dev\" \"jest --watch\""
   },
   "dependencies": {
-    "@quasar/extras": "^1.13.5",
+    "@quasar/extras": "^1.13.6",
     "@vue-composable/axios": "^1.0.0-dev.0",
     "@vue/composition-api": "^1.6.0",
     "@vueuse/core": "^8.3.1",
