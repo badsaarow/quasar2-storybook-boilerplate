@@ -4478,10 +4478,10 @@
   optionalDependencies:
     prettier "^1.18.2 || ^2.0.0"
 
-"@vue/composition-api@^1.6.0":
-  version "1.6.0"
-  resolved "https://registry.yarnpkg.com/@vue/composition-api/-/composition-api-1.6.0.tgz#41c45672245fff2181f8be1f757c95cb6c9b0316"
-  integrity sha512-m/FbsCXn0Ov2QCYUEIt4yupWJLCL6nfZg/Xx2L5VlFUqgJb2iOrbLnkYSV0TO2VUxkBLSFtTZMyG8IIHZFdKNA==
+"@vue/composition-api@^1.6.1":
+  version "1.6.2"
+  resolved "https://registry.yarnpkg.com/@vue/composition-api/-/composition-api-1.6.2.tgz#8e65cf60cd919f23649951ed14a67d43cd32131d"
+  integrity sha512-g6pCOaAB5Z987EwCBIDanRlramrgnWfrrYS8F/0axn2AL8EvyfAebDcLTSr48hac0G0rqC9ODp5LWaiupzl6Tw==
 
 "@vue/devtools-api@^6.0.0", "@vue/devtools-api@^6.0.0-beta.11", "@vue/devtools-api@^6.0.0-beta.19", "@vue/devtools-api@^6.0.0-beta.7":
   version "6.0.12"
