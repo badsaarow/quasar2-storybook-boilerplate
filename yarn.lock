@@ -4582,24 +4582,24 @@
   resolved "https://registry.yarnpkg.com/@vue/web-component-wrapper/-/web-component-wrapper-1.3.0.tgz#b6b40a7625429d2bd7c2281ddba601ed05dc7f1a"
   integrity sha512-Iu8Tbg3f+emIIMmI2ycSI8QcEuAUgPTgHwesDU1eKMLE4YC/c/sFbGc70QgMq31ijRftV0R7vCm9co6rldCeOA==
 
-"@vueuse/core@^8.3.1":
-  version "8.3.1"
-  resolved "https://registry.yarnpkg.com/@vueuse/core/-/core-8.3.1.tgz#7f2c5977cc0690a803f44c3f5c291536ad7880d1"
-  integrity sha512-WiXUgVyPG9elGx3G8UV8g+zqbEJ2hYacrPICogAxDdW6hnxxcUFdF7FtvDroJ/DxWmo2pg8XNNz07ybfnZyJbw==
+"@vueuse/core@^8.5.0":
+  version "8.6.0"
+  resolved "https://registry.yarnpkg.com/@vueuse/core/-/core-8.6.0.tgz#a8f80363cc63d17382423f16beae57696f376e67"
+  integrity sha512-VirzExCm/N+QdrEWT7J4uSrvJ5hquKIAU9alQ37kUvIJk9XxCLxmfRnmekYc1kz2+6BnoyuKYXVmrMV351CB4w==
   dependencies:
-    "@vueuse/metadata" "8.3.1"
-    "@vueuse/shared" "8.3.1"
+    "@vueuse/metadata" "8.6.0"
+    "@vueuse/shared" "8.6.0"
     vue-demi "*"
 
-"@vueuse/metadata@8.3.1":
-  version "8.3.1"
-  resolved "https://registry.yarnpkg.com/@vueuse/metadata/-/metadata-8.3.1.tgz#acc0ff9ad686c68dfc7b4869639c43e71ae2682b"
-  integrity sha512-1aZaFL44HzXXkfN6Q7KMDOXBFKTHDClHlOJBxtN8rTBXIIScoGOrJCpxWiQ4kuVg95MzG/pHrd3P4wd8poL9XQ==
+"@vueuse/metadata@8.6.0":
+  version "8.6.0"
+  resolved "https://registry.yarnpkg.com/@vueuse/metadata/-/metadata-8.6.0.tgz#34771443a72ee891ae001a70aa05dd9a1d799372"
+  integrity sha512-F+CKPvaExsm7QgRr8y+ZNJFwXasn89rs5wth/HeX9lJ1q8XEt+HJ16Q5Sxh4rfG5YSKXrStveVge8TKvPjMjFA==
 
-"@vueuse/shared@8.3.1":
-  version "8.3.1"
-  resolved "https://registry.yarnpkg.com/@vueuse/shared/-/shared-8.3.1.tgz#a941ef6a0eaf483ecb0e88a062163d506c22cc4b"
-  integrity sha512-7HKLCcxp4dtONq6QSSoavblo9riYgqzw7jhqiC0/VUYMXKzqj1G/GznOzTmY8Wi8uKKT197JqjKQ1DKt2j/0+A==
+"@vueuse/shared@8.6.0":
+  version "8.6.0"
+  resolved "https://registry.yarnpkg.com/@vueuse/shared/-/shared-8.6.0.tgz#63dad9fc4b73a7fccbe5d6b97adeacf73d4fec41"
+  integrity sha512-Y/IVywZo7IfEoSSEtCYpkVEmPV7pU35mEIxV7PbD/D3ly18B3mEsBaPbtDkNM/QP3zAZ5mn4nEkOfddX4uwuIA==
   dependencies:
     vue-demi "*"
 
