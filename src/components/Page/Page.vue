@@ -38,13 +38,13 @@ export default {
       quasar
     */
 
-    let $q = useQuasar()
+    const $q = useQuasar()
 
     /*
       nudge left class
     */
 
-    let hasActiveChildPage = ref(false)
+    const hasActiveChildPage = ref(false)
 
     onActivated(() => {
       emit('pageActivated')
