@@ -45,7 +45,7 @@
     "core-js": "^3.25.0",
     "crypto-js": "^4.1.1",
     "lottie-web": "^5.9.4",
-    "quasar": "^2.7.6",
+    "quasar": "^2.10.0",
     "secure-ls": "^1.2.6",
     "swiper": "^8.3.2",
     "vue": "^3.2.38",
