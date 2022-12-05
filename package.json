@@ -42,7 +42,7 @@
     "@vue/composition-api": "^1.7.1",
     "@vueuse/core": "^8.8.0",
     "axios": "^0.27.2",
-    "core-js": "^3.25.5",
+    "core-js": "^3.26.1",
     "crypto-js": "^4.1.1",
     "lottie-web": "^5.9.4",
     "quasar": "^2.10.0",
