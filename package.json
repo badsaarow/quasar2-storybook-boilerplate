@@ -4,7 +4,7 @@
   "description": "quasar2-storybook-boilerplate",
   "productName": "Quasar2 Storybook Boilerplate",
   "author": "sungyong<sungyong@gmail.com>",
-  "private": true,
+  "private": false,
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -14,7 +14,7 @@
     "build:storybook": "build-storybook"
   },
   "dependencies": {
-    "@quasar/extras": "^1.15.2",
+    "@quasar/extras": "^1.15.7",
     "quasar": "^2.7.7",
     "vue": "^3.2.37"
   },
@@ -28,10 +28,10 @@
     "@storybook/builder-vite": "^0.2.2",
     "@storybook/testing-library": "^0.0.13",
     "@storybook/vue3": "^6.5.10",
-    "@vitejs/plugin-vue": "^3.0.3",
+    "@vitejs/plugin-vue": "^4.0.0",
     "babel-loader": "^9.1.0",
-    "sass": "^1.56.1",
-    "vite": "^3.0.7",
+    "sass": "^1.56.2",
+    "vite": "^4.0.0",
     "vue-loader": "^17.0.1"
   }
 }
