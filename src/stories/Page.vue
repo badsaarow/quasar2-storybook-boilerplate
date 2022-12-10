@@ -1,6 +1,11 @@
 <template>
   <article>
-    <my-header @onLogin="onLogin" @onLogout="onLogout" @onCreateAccount="onCreateAccount" />
+    <my-header
+      :user="user"
+      @login="onLogin"
+      @logout="onLogout"
+      @createAccount="onCreateAccount"
+    />
 
     <section>
       <h2>Pages in Storybook</h2>
@@ -54,24 +59,30 @@
 </template>
 
 <script>
-import './page.css'
-import MyHeader from './Header.vue'
+import './page.css';
+import MyHeader from './Header.vue';
 
 export default {
-  name: 'MyPage',
+  name: 'my-page',
 
   components: { MyHeader },
 
+  data() {
+    return {
+      user: null
+    }
+  },
+
   methods: {
     onLogin() {
-      this.$emit('onLogin')
+      this.user = { name: 'Jane Doe' };
     },
     onLogout() {
-      this.$emit('onLogout')
+      this.user = null;
     },
     onCreateAccount() {
-      this.$emit('onCreateAccount')
+      this.user = { name: 'Jane Doe' };
     },
   },
-}
+};
 </script>
