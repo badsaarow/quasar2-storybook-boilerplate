@@ -14,7 +14,7 @@
     "build:storybook": "build-storybook"
   },
   "dependencies": {
-    "@quasar/extras": "^1.15.8",
+    "@quasar/extras": "^1.15.10",
     "quasar": "^2.11.5",
     "vue": "^3.2.37"
   },
