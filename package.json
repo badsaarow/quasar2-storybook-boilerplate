@@ -17,7 +17,7 @@
   },
   "dependencies": {
     "@quasar/extras": "^1.16.7",
-    "quasar": "^2.13.0",
+    "quasar": "^2.14.0",
     "vue": "^3.3.6"
   },
   "devDependencies": {
