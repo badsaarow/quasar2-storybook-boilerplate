@@ -6213,10 +6213,10 @@ qs@^6.10.0:
   dependencies:
     side-channel "^1.0.4"
 
-quasar@^2.14.0:
-  version "2.14.1"
-  resolved "https://registry.yarnpkg.com/quasar/-/quasar-2.14.1.tgz#3681cca0aff98b8eb5214b00c69dfdfcce58dfc9"
-  integrity sha512-TAIGUgHASlL7COS9qqfDKyV2+WGFcHQseIDTzN+yfXaXY5gn/FZqwkEnb87bgOqgGYw8KJerkfZg3aSel+bLPw==
+quasar@^2.14.2:
+  version "2.14.2"
+  resolved "https://registry.yarnpkg.com/quasar/-/quasar-2.14.2.tgz#794d8434eb449549fc8455aaec9bc14b71a57c98"
+  integrity sha512-f5KliWtM5BEuFsDU4yvuP+dlVIWZNrGu5VpWFsxzjpoykcP4B2HIOUiCl3mx2NCqERHd4Ts0aeioRkt9TTeExA==
 
 queue-microtask@^1.2.2:
   version "1.2.3"
@@ -6237,6 +6237,11 @@ raw-body@2.5.1:
   version "2.5.1"
   resolved "https://registry.yarnpkg.com/raw-body/-/raw-body-2.5.1.tgz#fe1b1628b181b700215e5fd42389f98b71392857"
   integrity sha512-qqJBtEyVgS0ZmPGdCFPWJ3FreoqvG4MVQln/kCgF7Olq95IbOp0/BWyMwbdtn4VTvkM8Y7khCQ2Xgk/tcrCXig==
+  dependencies:
+    bytes "3.1.2"
+    http-errors "2.0.0"
+    iconv-lite "0.4.24"
+    unpipe "1.0.0"
 
 react-colorful@^5.1.2:
   version "5.6.1"
