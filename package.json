@@ -18,7 +18,7 @@
   "dependencies": {
     "@quasar/extras": "^1.16.7",
     "quasar": "^2.14.3",
-    "vue": "^3.4.8"
+    "vue": "^3.4.16"
   },
   "devDependencies": {
     "@babel/core": "^7.22.1",
