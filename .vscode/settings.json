@@ -1,35 +1,16 @@
 {
-  "vetur.validation.template": false,
-  "vetur.format.enable": false,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": true,
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": [
+    "source.fixAll.eslint"
+  ],
   "eslint.validate": [
     "javascript",
     "javascriptreact",
     "typescript",
     "vue"
   ],
-  "typescript.tsdk": "node_modules/typescript/lib",
-  "vetur.experimental.templateInterpolationService": true,
-  "liveServer.settings.port": 5501,
-  "json.schemas": [
-    {
-      "fileMatch": [
-        "cypress.json"
-      ],
-      "url": "https://on.cypress.io/cypress.schema.json"
-    }
-  ],
-  "cSpell.words": [
-    "browserslist",
-    "chromaui",
-    "digestalg",
-    "flexbugs",
-    "logux",
-    "miragejs",
-    "Parens",
-    "persistedstate",
-    "Serializers",
-    "sharec",
-    "sigalg",
-    "styl"
-  ]
+  "typescript.tsdk": "node_modules/typescript/lib"
 }

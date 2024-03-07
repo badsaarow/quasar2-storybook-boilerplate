@@ -1,7 +1,11 @@
 /dist
+/src-capacitor
 /src-cordova
+/.quasar
 /node_modules
+.eslintrc.cjs
 /src-ssr
+/quasar.config.*.temporary.compiled*
 /test
 /src/boot
 .eslintrc.js
@@ -17,4 +21,3 @@ wallaby.js
 .github
 .husky
 jest.setup.js
-*.md
