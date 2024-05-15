@@ -7475,10 +7475,10 @@ qs@^6.10.0:
   dependencies:
     side-channel "^1.0.6"
 
-quasar@^2.15.2:
-  version "2.15.3"
-  resolved "https://registry.yarnpkg.com/quasar/-/quasar-2.15.3.tgz#49c70f2a404f23d9dec9b8ae925702bc74f7ed86"
-  integrity sha512-+6g6D1t/O95dhuov4b6SwR3asowr01xwV1A2JWh5cVQc1hTmolXzgQNPbrOApLjGX7N1cQ119DWajJ/G8KzXPQ==
+quasar@^2.15.4:
+  version "2.16.4"
+  resolved "https://registry.yarnpkg.com/quasar/-/quasar-2.16.4.tgz#e4c6c062df1037fa546f1f0bbc99daa67e36bec2"
+  integrity sha512-ICntco9uZ4PeyLgzVckjK3fsS+LG7+rOUmRyR7Gq3XpfeCADs1edIRjlxsPpWBBJvK/9AHLGPO6XNmnJmdJm0A==
 
 queue-microtask@^1.2.2:
   version "1.2.3"
