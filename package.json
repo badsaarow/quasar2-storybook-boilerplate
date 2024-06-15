@@ -17,7 +17,7 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
-    "@quasar/extras": "^1.16.4",
+    "@quasar/extras": "^1.16.11",
     "axios": "^1.7.1",
     "pinia": "^2.0.11",
     "quasar": "^2.15.4",
