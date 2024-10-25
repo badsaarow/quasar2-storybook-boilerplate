@@ -20,11 +20,6 @@ jobs:
         run: |
           yarn install --frozen-lockfile
           yarn run test:unit
-      - if: '!(github.ref == ''ref/head/main'' || github.ref == ''ref/head/develop'')'
-        name: npm install and test
-        run: |
-          yarn install --frozen-lockfile
-          yarn run test:unit:ci
   full:
     name: Node.js 18 Full
     runs-on: ubuntu-latest
